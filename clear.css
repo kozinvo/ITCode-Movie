@@ -1,0 +1,46 @@
+/* Минимальное обнуление */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+optgroup,
+select {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font: inherit;
+    /* По дефолту, шрифтовые свойства, для этих элементов не наследуются */
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+textarea {
+    color: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+}
